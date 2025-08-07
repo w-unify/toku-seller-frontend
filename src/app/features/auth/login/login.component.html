@@ -1,0 +1,56 @@
+<div class="fixed inset-0 bg-purple-700 flex items-center justify-center">
+    <div class="grid grid-cols-12 justify-center items-center authentication authentication-basic h-full w-full">
+        <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-3 md:col-span-3 sm:col-span-2 col-span-12"></div>
+        <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-6 md:col-span-6 sm:col-span-8 col-span-12">
+            <div class="box my-4">
+                <div class="box-body p-[3rem]">
+                    <div class="mb-3 flex justify-center">
+                        <a routerLink="/login">
+                            <img src="images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo">
+                            <img src="images/brand-logos/desktop-white.png" alt="logo" class="desktop-white">
+                        </a>
+                    </div>
+                    <p class="h5 mb-2 text-center">Iniciar Sesión</p>
+
+                    <form (ngSubmit)="onLogin()">
+                        <div class="grid grid-cols-12 gap-y-3">
+                            <div class="xl:col-span-12 col-span-12">
+                                <label for="signin-email" class="form-label text-defaulttextcolor">Usuario<sup
+                                        class="text-xs text-danger">*</sup></label>
+                                <input type="text" class="form-control" id="signin-email" name="username"
+                                    [(ngModel)]="username" placeholder="" required>
+                            </div>
+                            <div class="xl:col-span-12 col-span-12 mb-2">
+                                <label for="signin-password"
+                                    class="form-label text-defaulttextcolor block">Contraseña<sup
+                                        class="text-xs text-danger">*</sup></label>
+                                <div class="relative">
+                                    <input [type]="passwordVisible ? 'text' : 'password'"
+                                        class="form-control create-password-input" id="signin-password" name="password"
+                                        [(ngModel)]="password" placeholder="" required>
+                                    <a href="javascript:void(0);"
+                                        class="show-password-button text-textmuted dark:text-textmuted/50"
+                                        id="button-addon2" (click)="togglePasswordVisibility()">
+
+                                        <i class="align-middle" [class.ri-eye-line]="passwordVisible"
+                                            [class.ri-eye-off-line]="!passwordVisible"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div *ngIf="errorMessage" class="error-message text-danger mt-3 text-center">
+                            {{ errorMessage }}
+                        </div>
+
+                        <div class="grid mt-4">
+                            <button type="submit" class="ti-btn ti-btn-primary">Acceder</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="xxl:col-span-4 xl:col-span-4 lg:col-span-3 md:col-span-3 sm:col-span-2 col-span-12"></div>
+    </div>
+</div>

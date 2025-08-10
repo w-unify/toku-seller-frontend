@@ -1,257 +1,411 @@
 <div class="main-content app-content">
     <div class="container-fluid">
-
-        <!-- Start::page-header -->
-        <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
-            <div>
-                <nav>
-                    <ol class="breadcrumb mb-0">
-                        <li class="breadcrumb-item">
-                            <a>Dashboard</a>
-                        </li>
-                    </ol>
-                </nav>
-            </div>
-            <div class="btn-list">
-            </div>
+  
+      <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
+        <div>
+          <nav>
+            <ol class="breadcrumb mb-0">
+              <li class="breadcrumb-item">
+                <a href="javascript:void(0);">
+                  Dashboards
+                </a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">Ecommerce</li>
+            </ol>
+          </nav>
+          <h1 class="page-title font-medium text-lg mb-0">Ecommerce</h1>
         </div>
-        <!-- End::page-header -->
-
-        <!-- Start: row-1 -->
-        <div class="grid grid-cols-12 gap-x-6">
-            <div class="xxl:col-span-9 col-span-12">
-                <div class="grid grid-cols-12 gap-x-6">
-                    <div class="xl:col-span-4 col-span-12">
-                        <div class="box overflow-hidden main-content-card">
-                            <div class="box-body">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
-                                            Ingreso por Comisiones</div>
-                                        <div class="text-[23px] font-medium mb-0">L 3,250.00</div>
-                                    </div>
-                                    <div class="avatar avatar-md bg-primary svg-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                                            <path d="M136,120v56a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0ZM239.86,98.11,226,202.12A16,16,0,0,1,210.13,216H45.87A16,16,0,0,1,30,202.12l-13.87-104A16,16,0,0,1,32,80H68.37L122,18.73a8,8,0,0,1,12,0L187.63,80H224a16,16,0,0,1,15.85,18.11ZM89.63,80h76.74L128,36.15ZM224,96H32L45.87,200H210.13Zm-51.16,23.2-5.6,56A8,8,0,0,0,174.4,184a7.44,7.44,0,0,0,.81,0,8,8,0,0,0,7.95-7.2l5.6-56a8,8,0,0,0-15.92-1.6Zm-89.68,0a8,8,0,0,0-15.92,1.6l5.6,56a8,8,0,0,0,8,7.2,7.44,7.44,0,0,0,.81,0,8,8,0,0,0,7.16-8.76Z"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box overflow-hidden main-content-card">
-                            <div class="box-body">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
-                                            Ingreso Por Membresias</div>
-                                        <div class="text-[23px] font-medium mb-0">L 65,5935</div>
-                                    </div>
-                                    <div class="avatar avatar-md bg-primary svg-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                                            <path d="M136,120v56a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0ZM239.86,98.11,226,202.12A16,16,0,0,1,210.13,216H45.87A16,16,0,0,1,30,202.12l-13.87-104A16,16,0,0,1,32,80H68.37L122,18.73a8,8,0,0,1,12,0L187.63,80H224a16,16,0,0,1,15.85,18.11ZM89.63,80h76.74L128,36.15ZM224,96H32L45.87,200H210.13Zm-51.16,23.2-5.6,56A8,8,0,0,0,174.4,184a7.44,7.44,0,0,0,.81,0,8,8,0,0,0,7.95-7.2l5.6-56a8,8,0,0,0-15.92-1.6Zm-89.68,0a8,8,0,0,0-15.92,1.6l5.6,56a8,8,0,0,0,8,7.2,7.44,7.44,0,0,0,.81,0,8,8,0,0,0,7.16-8.76Z"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                          <div class="box overflow-hidden main-content-card">
-                            <div class="box-body">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
-                                            Total de Pedidos </div>
-                                        <div class="text-[23px] font-medium mb-0">L 45,5935</div>
-                                    </div>
-                                    <div class="avatar avatar-md bg-primarytint3color svg-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                                            <path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="box overflow-hidden main-content-card">
-                            <div class="box-body">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
-                                            Ingresos Por Delivery</div>
-                                        <div class="text-[23px] font-medium mb-0">L 65,5935</div>
-                                    </div>
-                                    <div class="avatar avatar-md bg-primarytint1color svg-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                                            <path d="M168,56a8,8,0,0,1,8-8h16V32a8,8,0,0,1,16,0V48h16a8,8,0,0,1,0,16H208V80a8,8,0,0,1-16,0V64H176A8,8,0,0,1,168,56Zm62.56,54.68a103.92,103.92,0,1,1-85.24-85.24,8,8,0,0,1-2.64,15.78A88.07,88.07,0,0,0,40,128a87.62,87.62,0,0,0,22.24,58.41A79.66,79.66,0,0,1,98.3,157.66a48,48,0,1,1,59.4,0,79.66,79.66,0,0,1,36.06,28.75A87.62,87.62,0,0,0,216,128a88.85,88.85,0,0,0-1.22-14.68,8,8,0,1,1,15.78-2.64ZM128,152a32,32,0,1,0-32-32A32,32,0,0,0,128,152Zm0,64a87.57,87.57,0,0,0,53.92-18.5,64,64,0,0,0-107.84,0A87.57,87.57,0,0,0,128,216Z"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="box overflow-hidden main-content-card">
-                            <div class="box-body">
-                                <div class="flex justify-between">
-                                    <div>
-                                        <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
-                                             Ingresos Total</div>
-                                        <div class="text-[23px] font-medium mb-0">L 4,350.17</div>
-                                    </div>
-                                    <div class="avatar avatar-md bg-primarytint1color svg-white">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
-                                            <path d="M168,56a8,8,0,0,1,8-8h16V32a8,8,0,0,1,16,0V48h16a8,8,0,0,1,0,16H208V80a8,8,0,0,1-16,0V64H176A8,8,0,0,1,168,56Zm62.56,54.68a103.92,103.92,0,1,1-85.24-85.24,8,8,0,0,1-2.64,15.78A88.07,88.07,0,0,0,40,128a87.62,87.62,0,0,0,22.24,58.41A79.66,79.66,0,0,1,98.3,157.66a48,48,0,1,1,59.4,0,79.66,79.66,0,0,1,36.06,28.75A87.62,87.62,0,0,0,216,128a88.85,88.85,0,0,0-1.22-14.68,8,8,0,1,1,15.78-2.64ZM128,152a32,32,0,1,0-32-32A32,32,0,0,0,128,152Zm0,64a87.57,87.57,0,0,0,53.92-18.5,64,64,0,0,0-107.84,0A87.57,87.57,0,0,0,128,216Z"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="xl:col-span-8 col-span-12">
-                        <div class="box">
-                            <div class="box-header justify-between">
-                                <div class="box-title">Tendencia de ventas</div>
-                                <div class="flex gap-2">
-                                    <div class="ti-btn ti-btn-sm ti-btn-outline-light">Hoy</div>
-                                    <div class="ti-btn ti-btn-sm ti-btn-outline-light">Semanal</div>
-                                    <div class="ti-btn ti-btn-sm ti-btn-light">Anual</div>
-                                </div>
-                            </div>
-                            <div class="box-body pb-2">
-                                <div id="sales-report"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="xxl:col-span-3 col-span-12">
-                <div class="box">
-                    <div class="box-header justify-between">
-                        <div class="box-title">Top 5 comercios</div>
-                        <a href="javascript:void(0);"
-                            class="ti-btn ti-btn-outline-light border flex items-center text-textmuted dark:text-textmuted/50 text-xs px-2 py-[0.26rem]">
-                            Ver todo
-                        </a>
-                    </div>
-                    <div class="box-body">
-                        <ul class="list-none mb-0" id="product-list">
-                            <li>
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class=" flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Comercio Zapateria</span>
-                                        <span class="text-textmuted dark:text-textmuted/50 text-xs">Ventas de comercio</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-[14px] font-medium">L124,000.00</p>
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">260 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mt-4">
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class="flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Comercio Estilistas</span>
-                                        <span class="text-textmuted dark:text-textmuted/50 text-xs">Ventas de comercio</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-[14px] font-medium">L15,640.00</p>
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">181 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mt-4">
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class="flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Comercio D1</span>
-                                        <span class="text-textmuted dark:text-textmuted/50 text-xs">Ventas de comercio</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-[14px] font-medium">L16,000.00</p>
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">134 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mt-4">
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class="flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Comercio Ara</span>
-                                        <span class="text-textmuted dark:text-textmuted/50 text-xs">Ventas de comercio</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-[14px] font-medium">L7,690.00</p>
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">127 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mt-4">
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class="flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Comercio Electronico</span>
-                                        <span class="text-textmuted dark:text-textmuted/50 text-xs">Ventas de comercio</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-[14px] font-medium">L12,000.00</p>
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">108 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="box-header justify-between">
-                        <div class="box-title">Top Membresias</div>
-                        <a href="javascript:void(0);"
-                            class="ti-btn ti-btn-outline-light border flex items-center text-textmuted dark:text-textmuted/50 text-xs px-2 py-[0.26rem]">
-                            Ver todo
-                        </a>
-                    </div>
-                    <div class="box-body">
-                        <ul class="list-none mb-0">
-                            <li>
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class=" flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Estandar</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">160 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mt-4">
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class="flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Premium</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">124 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mt-4">
-                                <div class="flex items-center flex-wrap">
-                                    <div class="me-3 leading-none"></div>
-                                    <div class="flex-auto">
-                                        <span class="text-[14px] block mb-0 font-medium">Básica</span>
-                                    </div>
-                                    <div class="text-end">
-                                        <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">93 Ventas</p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <div class="btn-list">
+          <button class="ti-btn bg-white dark:bg-bodybg border border-defaultborder dark:border-defaultborder/10 btn-wave !my-0">
+            <i class="ri-filter-3-line align-middle me-1 leading-none"></i> Filtrar
+          </button>
         </div>
+      </div>
+      <div class="grid grid-cols-12 gap-x-6">
+        <div class="xxl:col-span-9 col-span-12">
+          <div class="grid grid-cols-12 gap-x-6">
+            <div class="xl:col-span-3 col-span-12">
+              <div class="box overflow-hidden main-content-card">
+                <div class="box-body">
+                  <div class="flex justify-between">
+                    <div>
+                      <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
+                        Venta Total</div>
+                      <div class="text-[23px] font-medium mb-0">10,432</div>
+                    </div>
+                    <div class="avatar avatar-md bg-primary svg-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M136,120v56a8,8,0,0,1-16,0V120a8,8,0,0,1,16,0ZM239.86,98.11,226,202.12A16,16,0,0,1,210.13,216H45.87A16,16,0,0,1,30,202.12l-13.87-104A16,16,0,0,1,32,80H68.37L122,18.73a8,8,0,0,1,12,0L187.63,80H224a16,16,0,0,1,15.85,18.11ZM89.63,80h76.74L128,36.15ZM224,96H32L45.87,200H210.13Zm-51.16,23.2-5.6,56A8,8,0,0,0,174.4,184a7.44,7.44,0,0,0,.81,0,8,8,0,0,0,7.95-7.2l5.6-56a8,8,0,0,0-15.92-1.6Zm-89.68,0a8,8,0,0,0-15.92,1.6l5.6,56a8,8,0,0,0,8,7.2,7.44,7.44,0,0,0,.81,0,8,8,0,0,0,7.16-8.76Z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box overflow-hidden main-content-card">
+                <div class="box-body">
+                  <div class="flex justify-between">
+                    <div>
+                      <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
+                        Ganancias</div>
+                      <div class="text-[23px] font-medium mb-0">$5,147</div>
+                    </div>
+                    <div class="avatar avatar-md bg-primarytint1color svg-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M168,56a8,8,0,0,1,8-8h16V32a8,8,0,0,1,16,0V48h16a8,8,0,0,1,0,16H208V80a8,8,0,0,1-16,0V64H176A8,8,0,0,1,168,56Zm62.56,54.68a103.92,103.92,0,1,1-85.24-85.24,8,8,0,0,1-2.64,15.78A88.07,88.07,0,0,0,40,128a87.62,87.62,0,0,0,22.24,58.41A79.66,79.66,0,0,1,98.3,157.66a48,48,0,1,1,59.4,0,79.66,79.66,0,0,1,36.06,28.75A87.62,87.62,0,0,0,216,128a88.85,88.85,0,0,0-1.22-14.68,8,8,0,1,1,15.78-2.64ZM128,152a32,32,0,1,0-32-32A32,32,0,0,0,128,152Zm0,64a87.57,87.57,0,0,0,53.92-18.5,64,64,0,0,0-107.84,0A87.57,87.57,0,0,0,128,216Z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box overflow-hidden main-content-card">
+                <div class="box-body">
+                  <div class="flex justify-between">
+                    <div>
+                      <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
+                        Valor promedio de ordenes</div>
+                      <div class="text-[23px] font-medium mb-0">$120</div>
+                    </div>
+                    <div class="avatar avatar-md bg-primarytint2color svg-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M224,200h-8V40a8,8,0,0,0-8-8H152a8,8,0,0,0-8,8V80H96a8,8,0,0,0-8,8v40H48a8,8,0,0,0-8,8v64H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16ZM160,48h40V200H160ZM104,96h40V200H104ZM56,144H88v56H56Z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="box overflow-hidden main-content-card">
+                <div class="box-body">
+                  <div class="flex justify-between">
+                    <div>
+                      <div class="flex-auto text-[13px] text-textmuted dark:text-textmuted/50">
+                        Ordenes totales</div>
+                      <div class="text-[23px] font-medium mb-0">1,25,032</div>
+                    </div>
+                    <div class="avatar avatar-md bg-primarytint3color svg-white">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256">
+                        <path d="M223.68,66.15,135.68,18a15.88,15.88,0,0,0-15.36,0l-88,48.17a16,16,0,0,0-8.32,14v95.64a16,16,0,0,0,8.32,14l88,48.17a15.88,15.88,0,0,0,15.36,0l88-48.17a16,16,0,0,0,8.32-14V80.18A16,16,0,0,0,223.68,66.15ZM128,32l80.34,44-29.77,16.3-80.35-44ZM128,120,47.66,76l33.9-18.56,80.34,44ZM40,90l80,43.78v85.79L40,175.82Zm176,85.78h0l-80,43.79V133.82l32-17.51V152a8,8,0,0,0,16,0V107.55L216,90v85.77Z">
+                        </path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="xl:col-span-9 col-span-12">
+              <div class="box">
+                <div class="box-header justify-between">
+                  <div class="box-title">Ventas reportadas</div>
+                  <div class="flex gap-2">
+                    <div class="ti-btn ti-btn-sm ti-btn-outline-light">Hora</div>
+                    <div class="ti-btn ti-btn-sm ti-btn-outline-light">Semanal</div>
+                    <div class="ti-btn ti-btn-sm ti-btn-light">Anual</div>
+                  </div>
+                </div>
+                <div class="box-body pb-2">
+                  <div id="sales-report"></div>
+                </div>
+              </div>
+            </div>
+            <div class="xxl:col-span-12 xl:col-span-7 col-span-12">
+              <div class="box overflow-hidden">
+                <div class="box-header justify-between">
+                  <div class="box-title">Ordenes Recientes</div>
+                  <a href="javascript:void(0);" class="ti-btn ti-btn-outline-light border ti-btn-sm flex items-center !text-textmuted dark:text-textmuted/50">
+                    Ver todo
+                  </a>
+                </div>
+                <div class="box-body p-0">
+                  <div class="table-responsive">
+                    <table class="ti-custom-table ti-custom-table-head ti-custom-table-hover">
+                      <thead>
+                        <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                          <th scope="col">Número de ID</th>
+                          <th scope="col">Cliente</th>
+                          <th scope="col">Fecha</th>
+                          <th scope="col">Monto</th>
+                          <th scope="col">Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                          <td><a href="javascript:void(0);" class="text-primary">#SKU0781</a></td>
+                          <td>
+                            <div class="flex items-center">
+                              <div class="me-2 leading-none">
+                                <span class="avatar avatar-sm">
+                                  <img src="assets/images/faces/15.jpg" alt="">
+                                </span>
+                              </div>
+                              <div>
+                                <a href="javascript:void(0)" class="text-[14px] font-medium">Juan Perez
+                                </a>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="block text-textmuted dark:text-textmuted/50">Mar
+                              18,2025</span>
+                          </td>
+                          <td>
+                            <span class="block mb-1">$2,145.90</span>
+                          </td>
+                          <td><span class="badge bg-success/10 text-success">Pagado</span>
+                          </td>
+                        </tr>
+                        <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                          <td><a href="javascript:void(0);" class="text-primary">#SPK782</a></td>
+                          <td>
+                            <div class="flex items-center">
+                              <div class="me-2 leading-none">
+                                <span class="avatar avatar-sm">
+                                  <img src="assets/images/faces/4.jpg" alt="">
+                                </span>
+                              </div>
+                              <div>
+                                <a href="javascript:void(0)" class="text-[14px] font-medium">Elsa Díaz</a>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="block text-textmuted dark:text-textmuted/50">Mar
+                              20,2025</span>
+                          </td>
+                          <td>
+                            <span class="block mb-1">$2,145.90</span>
+                          </td>
+                          <td><span class="badge bg-danger/10 text-danger">No Pagado</span>
+                          </td>
+                        </tr>
+                        <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                          <td><a href="javascript:void(0);" class="text-primary">#SPK783</a></td>
+                          <td>
+                            <div class="flex items-center">
+                              <div class="me-2 leading-none">
+                                <span class="avatar avatar-sm">
+                                  <img src="assets/images/faces/5.jpg" alt="">
+                                </span>
+                              </div>
+                              <div>
+                                <a href="javascript:void(0)" class="text-[14px] font-medium">Gloria López</a>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="block text-textmuted dark:text-textmuted/50">Mar
+                              24,2025</span>
+                          </td>
+                          <td>
+                            <span class="block mb-1">$2,145.90</span>
+                          </td>
+                          <td><span class="badge bg-success/10 text-success">Pagado</span>
+                          </td>
+                        </tr>
+                        <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                          <td><a href="javascript:void(0);" class="text-primary">#SPK784</a></td>
+                          <td>
+                            <div class="flex items-center">
+                              <div class="me-2 leading-none">
+                                <span class="avatar avatar-sm">
+                                  <img src="assets/images/faces/6.jpg" alt="">
+                                </span>
+                              </div>
+                              <div>
+                                <a href="javascript:void(0)" class="text-[14px] font-medium">Marcela Campos</a>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="block text-textmuted dark:text-textmuted/50">Mar
+                              25,2025</span>
+                          </td>
+                          <td>
+                            <span class="block mb-1">$2,145.90</span>
+                          </td>
+                          <td><span class="badge bg-warning/10 text-warning">Pendiente</span>
+                          </td>
+                        </tr>
+                        <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                          <td><a href="javascript:void(0);" class="text-primary">#SPK785</a></td>
+                          <td>
+                            <div class="flex items-center">
+                              <div class="me-2 leading-none">
+                                <span class="avatar avatar-sm">
+                                  <img src="assets/images/faces/11.jpg" alt="">
+                                </span>
+                              </div>
+                              <div>
+                                <a href="javascript:void(0)" class="text-[14px] font-medium">Adam Smith</a>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <span class="block text-textmuted dark:text-textmuted/50">Mar
+                              18,2025</span>
+                          </td>
+                          <td>
+                            <span class="block mb-1">$2,145.90</span>
+                          </td>
+                          <td><span class="badge bg-danger/10 text-danger">No Pagado</span>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xxl:col-span-3 col-span-12">
+          <div class="box offer-card">
+            <div class="box-body p-6">
+              <div class="flex align-items-end gap-2">
+                <div class="offer-card-details">
+                  <div class="offer-item">
+                    <div class="avatar avatar-xl mb-3">
+                      <img src="assets/images/ecommerce/png/17.png" alt="Product Image" class="img-fluid">
+                    </div>
+                    <div class="product-info">
+                      <h4 class="mb-2 font-medium text-white">Cambia tu plan a Plus</h4>
+                      <span class="mb-1 text-success font-semibold text-xs">Ahorra hasta 20% con tu
+                      </span>
+                      <span class="mb-3 text-white h6">Membresia Plus</span>
+                    </div>
+                    <span class="text-white">Precio: $9.99</span>
+                    <span class="text-white ps-2">Descuento: 20%</span>
+                  </div>
+                  <button class="ti-btn text-white bg-primarytint1color mt-6 shadow">Comprar ahora</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box-header justify-between">
+              <div class="box-title">Productos más vendidos</div>
+              <a href="javascript:void(0);" class="ti-btn ti-btn-outline-light border flex items-center text-textmuted dark:text-textmuted/50 text-xs px-2 py-[0.26rem]">
+                Ver todo
+              </a>
+            </div>
+            <div class="box-body">
+              <ul class="list-none mb-0" id="product-list">
+                <li class="">
+                  <div class="flex items-center flex-wrap">
+                    <div class="me-3 leading-none">
+                      <span class="avatar avatar-lg bg-gray-200 dark:bg-light">
+                        <img src="assets/images/ecommerce/png/6.png" alt="">
+                      </span>
+                    </div>
+                    <div class=" flex-auto">
+                      <span class="text-[14px] block mb-0 font-medium">Silla RM</span>
+                      <span class="text-textmuted dark:text-textmuted/50 text-xs">Muebles</span>
+                    </div>
+                    <div class="text-end">
+                      <p class="mb-0 text-[14px] font-medium">L124,000.00</p>
+                      <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">260
+                        Ventas</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mt-4">
+                  <div class="flex items-center flex-wrap">
+                    <div class="me-3 leading-none">
+                      <span class="avatar avatar-lg bg-gray-200 dark:bg-light">
+                        <img src="assets/images/ecommerce/png/7.png" alt="">
+                      </span>
+                    </div>
+                    <div class="flex-auto">
+                      <span class="text-[14px] block mb-0 font-medium">Bolsa de mano Gucci</span>
+                      <span class="text-textmuted dark:text-textmuted/50 text-xs">Accessorios</span>
+                    </div>
+                    <div class="text-end">
+                      <p class="mb-0 text-[14px] font-medium">L15,640.00</p>
+                      <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">181
+                        Ventas</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mt-4">
+                  <div class="flex items-center flex-wrap">
+                    <div class="me-3 leading-none">
+                      <span class="avatar avatar-lg bg-gray-200 dark:bg-light">
+                        <img src="assets/images/ecommerce/png/28.png" alt="">
+                      </span>
+                    </div>
+                    <div class="flex-auto">
+                      <span class="text-[14px] block mb-0 font-medium">Tennis</span>
+                      <span class="text-textmuted dark:text-textmuted/50 text-xs">Deportes</span>
+                    </div>
+                    <div class="text-end">
+                      <p class="mb-0 text-[14px] font-medium">L16,000.00</p>
+                      <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">134
+                        Ventas</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mt-4">
+                  <div class="flex items-center flex-wrap">
+                    <div class="me-3 leading-none">
+                      <span class="avatar avatar-lg bg-gray-200 dark:bg-light">
+                        <img src="assets/images/ecommerce/png/11.png" alt="">
+                      </span>
+                    </div>
+                    <div class="flex-auto">
+                      <span class="text-[14px] block mb-0 font-medium">Sweater Gap</span>
+                      <span class="text-textmuted dark:text-textmuted/50 text-xs">Moda</span>
+                    </div>
+                    <div class="text-end">
+                      <p class="mb-0 text-[14px] font-medium">L7,690.00</p>
+                      <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">127
+                        Ventas</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mt-4">
+                  <div class="flex items-center flex-wrap">
+                    <div class="me-3 leading-none">
+                      <span class="avatar avatar-lg bg-gray-200 dark:bg-light">
+                        <img src="assets/images/ecommerce/png/23.png" alt="">
+                      </span>
+                    </div>
+                    <div class="flex-auto">
+                      <span class="text-[14px] block mb-0 font-medium">Reloj Inteligente</span>
+                      <span class="text-textmuted dark:text-textmuted/50 text-xs">Electronicos</span>
+                    </div>
+                    <div class="text-end">
+                      <p class="mb-0 text-[14px] font-medium">L12,000.00</p>
+                      <p class="mb-0 text-textmuted dark:text-textmuted/50 text-[14px]">108
+                        Ventas</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          </div>
+      </div>
+      </div>
+  </div>
+  <div class="hs-overlay ti-modal hidden" id="header-responsive-search" tabindex="-1" aria-labelledby="header-responsive-search" aria-hidden="true">
+    <div class="ti-modal-box">
+      <div class="ti-modal-dialog">
+        <div class="ti-modal-content">
+          <div class="ti-modal-body">
+            <div class="input-group">
+              <input type="text" class="form-control border-end-0 !border-s" placeholder="Search Anything ..." aria-label="Search Anything ..." aria-describedby="button-addon2">
+              <button class="ti-btn ti-btn-primary !m-0" type="button" id="button-addon2"><i class="bi bi-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-
-<!-- Scroll To Top -->
-<div class="scrollToTop">
+  </div>
+  
+  
+  <div class="scrollToTop">
     <span class="arrow"><i class="ti ti-arrow-narrow-up text-xl"></i></span>
-</div>
-<div id="responsive-overlay"></div>
+  </div>
+  <div id="responsive-overlay"></div>

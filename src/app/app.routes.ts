@@ -17,6 +17,15 @@ export const routes: Routes = [
     title: 'Login Toku',
   },
   {
+    path: 'registration',
+    loadComponent: () =>
+      import('./features/auth/registration/registration.component').then(
+        (m) => m.RegistrationComponent
+      ),
+    title: 'Register Toku',
+  },
+
+  {
     path: '',
     component: AppLayoutComponent,
     //canActivate: [authGuard], --desactivado mientras se pruebas las nuevas opciones
@@ -28,7 +37,32 @@ export const routes: Routes = [
             (m) => m.DashboardSellerComponent
           ),
         title: 'Dashboard Comercio',
-      }
+      },
+      {
+        path: 'profile',
+        loadComponent: () =>
+          import('./features/profile/profile.component').then(
+            (m) => m.ProfileComponent
+          ),
+        title: 'Perfil Comercio',
+      },
+      {
+        path: 'products',
+        loadComponent: () =>
+          import('./features/products/products.component').then(
+            (m) => m.ProductsComponent
+          ),
+        title: 'Listado de Productos',
+      },
+      {
+        path: 'orders',
+        loadComponent: () =>
+          import('./features/orders/orders.component').then(
+            (m) => m.OrdersComponent
+          ),
+        title: 'Ordenes Activas',
+      },
+      
     ],
   },
 ];

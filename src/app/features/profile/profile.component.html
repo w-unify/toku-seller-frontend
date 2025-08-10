@@ -1,0 +1,133 @@
+<div class="main-content app-content">
+  <div class="container-fluid">
+
+    <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
+      <div>
+        <nav>
+          <ol class="breadcrumb mb-1">
+            <li class="breadcrumb-item"><a href="javascript:void(0);">Mi Perfil</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Mis Datos</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="grid grid-cols-12 gap-x-6">
+      <div class="xl:col-span-12 col-span-12">
+        <div class="box">
+          <div class="box-header">
+            <div class="box-title">
+              Registro de Comercio
+            </div>
+          </div>
+          <div class="box-body !p-0">
+            <form class="wizard wizard-tab horizontal" method="POST">
+              <aside class="wizard-content container">
+
+                <div class="wizard-step" data-title="Información personal" data-id="step-personal">
+                  
+                  <div class="grid grid-cols-12 sm:gap-x-6 gap-y-4">
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="responsable-name" class="ti-form-label">Primer y Segundo Nombre*</label>
+                      <input type="text" class="form-control" id="responsable-name" placeholder="Juan Carlos">
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="responsable-lastname" class="ti-form-label">Primer y segundo Apellido*</label>
+                      <input type="text" class="form-control" id="responsable-lastname" placeholder="Campos Castro">
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="dob" class="ti-form-label">Fecha de nacimiento</label>
+                      <div class="input-group">
+                        <div class="input-group-text text-textmuted dark:text-textmuted/50">
+                          <i class="ri-calendar-line"></i>
+                        </div>
+                        <input type="text" class="form-control flatpickr-input" id="dob" placeholder="Selecciona tu fecha de nacimiento" readonly="readonly">
+                      </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label class="ti-form-label">Whatsapp personal*</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="whatsapp-prefix-personal">+504</span>
+                        <input type="text" class="form-control" placeholder="77679809" aria-label="Whatsapp Personal">
+                      </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="gender" class="ti-form-label">Selecciona tu género:</label>
+                      <select id="gender" class="form-control" data-trigger>
+                        <option value="male">Hombre</option>
+                        <option value="female">Mujer</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <hr class="my-6">
+                  
+                  <h1 class="page-title font-medium text-lg mb-4">Datos de tu comercio</h1>
+                  <div class="grid grid-cols-12 sm:gap-x-6 gap-y-4">
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="business-name" class="ti-form-label">Nombre del comercio*</label>
+                      <input type="text" class="form-control" id="business-name" placeholder="Zapatería Castro">
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="business-address" class="ti-form-label">Dirección del comercio*</label>
+                      <input type="text" class="form-control" id="business-address" placeholder="Col. Kennedy, Avenida 12, Calle1, Local8">
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="email" class="ti-form-label">Correo*</label>
+                      <input type="email" class="form-control" id="email" placeholder="alex@gmail.com">
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label class="ti-form-label">Whatsapp del comercio*</label>
+                      <div class="input-group">
+                        <span class="input-group-text" id="whatsapp-prefix-commerce">+504</span>
+                        <input type="text" class="form-control" placeholder="77679809" aria-label="Whatsapp Comercio">
+                      </div>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12 product-documents-container">
+                      <label for="logo-upload" class="ti-form-label">Logo del Comercio</label>
+                      <input type="file" id="logo-upload" name="logo-file" class="file-input block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100">
+                      <small class="form-text text-textmuted dark:text-textmuted/50 text-xs">*Adjuntar el logo en formato png o webp de máximo 150 KB</small>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="country" class="ti-form-label">País</label>
+                      <select id="country" class="form-control" data-trigger>
+                        <option value="honduras">Honduras</option>
+                      </select>
+                    </div>
+                    <div class="xl:col-span-6 col-span-12">
+                      <label for="department" class="ti-form-label">Departamento*</label>
+                      <select id="department" class="form-control" data-trigger>
+                        <option value="">Selecciona un departamento</option>
+                        <option value="tegucigalpa">Tegucigalpa</option>
+                        <option value="san_pedro_sula">San Pedro Sula</option>
+                        <option value="la_ceiba">La Ceiba</option>
+                      </select>
+                    </div>
+                  </div>
+                </div> <div class="wizard-step" data-title="Documentos" data-id="step-documents">
+                  <div class="grid grid-cols-12 sm:gap-x-12 gap-y-6">
+                    <div class="xl:col-span-12 col-span-12">
+                      <h4 class="text-xl font-semibold mb-3">Documentos Requeridos</h4>
+                      </div>
+                  </div>
+                </div> <div class="wizard-step" data-title="Datos Bancarios" data-id="step-banking">
+                  <h4 class="text-xl font-semibold mb-3">Información Bancaria</h4>
+                  <div id="bank-accounts-container" class="space-y-6">
+                    </div>
+                  <div class="mt-4 text-end">
+                    <button type="button" id="add-bank-account-btn" class="ti-btn ti-btn-light ti-btn-icon rounded-full">
+                      <i class="ri-add-line"></i>
+                    </button>
+                    <span class="ms-2 text-sm text-gray-600">Agregar otra cuenta</span>
+                  </div>
+                </div> </aside>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scrollToTop">
+  <span class="arrow"><i class="ti ti-arrow-narrow-up text-xl"></i></span>
+</div>
+<div id="responsive-overlay"></div>

@@ -1,0 +1,187 @@
+<div class="main-content app-content">
+    <div class="container-fluid">
+  
+      <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
+        <div>
+          <nav>
+            <ol class="breadcrumb mb-1">
+              <li class="breadcrumb-item"><a>Productos</a></li>
+            </ol>
+          </nav>
+          <h1 class="page-title font-medium text-lg mb-0">Listado de productos</h1>
+        </div>
+        <div class="ms-auto mt-md-0 mt-2">
+          <button type="button" class="ti-btn ti-btn-success text-white me-1" data-hs-overlay="#modal-import-excel">
+            Importar Excel<i class="ri-file-excel-2-line ms-1 align-middle inline-block"></i>
+          </button>
+          <a routerlink="agregar-producto" class="ti-btn ti-btn bg-primary text-white">
+            Agregar producto<i class="ri-add-line ms-1 align-middle inline-block"></i>
+          </a>
+        </div>
+      </div>
+      <div class="box">
+        <div class="box-header justify-between">
+          <div class="box-title">
+            Todos los Productos
+          </div>
+          <div class="flex gap-4 items-center flex-wrap">
+            <div class="ti-btn-group ti-dropdown hs-dropdown p-0 border-0">
+              <button class="ti-btn ti-btn-outline-light border !m-0 !border-defaultborder dark:!border-defaultborder/10 ti-dropdown-toggle hs-dropdown-toggle gap-0" type="button">
+                <i class="ti ti-sort-descending-2 me-1"></i> Filtrar por
+                <i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+              </button>
+              <ul class="ti-dropdown-menu hs-dropdown-menu hidden">
+                <li><a class="ti-dropdown-item" href="javascript:void(0)">Fecha Creada</a></li>
+                <li><a class="ti-dropdown-item" href="javascript:void(0)">Estado</a></li>
+                <li><a class="ti-dropdown-item" href="javascript:void(0)">Nombre del producto</a></li>
+              </ul>
+            </div>
+            <div class="custom-form-group grow">
+              <input type="text" class="form-control !pe-[7rem]" placeholder="Buscar..." aria-label="Buscar producto">
+              <a class="text-textmuted dark:text-textmuted/50 custom-form-btn"><i class="ti ti-search"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="box-body p-0">
+          <div class="table-responsive">
+            <table class="ti-custom-table ti-custom-table-hover text-nowrap">
+              <thead>
+                <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                  <th scope="col">SKU</th>
+                  <th scope="col">Producto</th>
+                  <th scope="col">Categoría</th>
+                  <th scope="col">Subcategoría</th>
+                  <th scope="col">Precio</th>
+                  <th scope="col">Descuento</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col">Acciones</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                  <td>#1172553</td>
+                  <td>
+                    <div class="flex items-center">
+                      <span class="avatar avatar-sm avatar-square bg-gray-300">
+                        <img src="assets/images/ecommerce/png/28.png" class="w-full h-full" alt="Zapatos">
+                      </span>
+                      <div class="ms-2">
+                        <p class="font-semibold mb-0 flex items-center"><a>Zapatos para correr</a></p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>Zapatos</td>
+                  <td>Sport</td>
+                  <td>L1,500.00</td>
+                  <td>N/A</td>
+                  <td><span class="badge bg-success/10 text-success">Activo</span></td>
+                  <td>
+                    <button type="button" class="ti-btn ti-btn-sm ti-btn-soft-primary" data-hs-overlay="#modal-ver-producto">
+                      <i class="ri-eye-line"></i>
+                    </button>
+                    <button type="button" class="ti-btn ti-btn-sm ti-btn-soft-info" data-hs-overlay="#modal-editar-producto">
+                      <i class="ri-pencil-line"></i>
+                    </button>
+                    <button type="button" class="ti-btn ti-btn-sm ti-btn-soft-danger" data-hs-overlay="#modal-eliminar-producto">
+                      <i class="ri-delete-bin-line"></i>
+                    </button>
+                  </td>
+                </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="box-footer">
+          <div class="flex items-center flex-wrap">
+            <div class="flex items-center gap-2">
+              <label for="entries" class="text-sm">Mostrar</label>
+              <select id="entries" name="entries" class="block w-20 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring">
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+              </select>
+              <span class="text-sm">registros</span>
+            </div>
+            <div class="ms-auto my-2">
+              <nav>
+                <ul class="ti-pagination mb-0 !p-0">
+                  <li class="page-item disabled"><a class="page-link" href="javascript:void(0);">Previo</a></li>
+                  <li class="page-item active"><a class="page-link" href="javascript:void(0);">1</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);">2</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);">3</a></li>
+                  <li class="page-item"><a class="page-link" href="javascript:void(0);">Siguiente</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="modal-ver-producto" class="hs-overlay hidden ti-modal">
+    </div>
+  
+  <div id="modal-editar-producto" class="hs-overlay hidden ti-modal">
+    <div class="hs-overlay-open:mt-7 ti-modal-box mt-0 ease-out lg:!max-w-4xl lg:w-full m-3 lg:!mx-auto">
+      <div class="ti-modal-content">
+        <div class="ti-modal-body overflow-y-auto max-h-[80vh] p-4">
+          <div class="box shadow-none border-0 m-0">
+            <div class="box-body add-products">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <div class="mb-4">
+                    <label class="form-label text-lg">Bocina inalámbrica Sony SRS-XB100 portátil</label><br>
+                    <label class="form-label text-gray-500 text-sm">SKU/Código: SK00001</label>
+                  </div>
+                  </div>
+                <div>
+                  </div>
+              </div>
+            </div>
+            <div class="box-footer sm:flex justify-end">
+              <button type="button" class="ti-btn bg-danger text-white me-2" data-hs-overlay="#modal-editar-producto">Cerrar</button>
+              <button type="button" class="ti-btn bg-primary text-white">Guardar Cambios</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-import-excel" class="hs-overlay hidden ti-modal">
+    <div class="hs-overlay-open:mt-7 ti-modal-box mt-0 ease-out sm:max-w-lg sm:w-full m-3 sm:mx-auto">
+      <div class="ti-modal-content">
+        <div class="ti-modal-header">
+          <h6 class="ti-modal-title">Importar productos desde Excel</h6>
+          <button type="button" class="hs-dropdown-toggle ti-modal-close-btn" data-hs-overlay="#modal-import-excel">
+            <span class="sr-only">Cerrar</span>
+            <svg class="w-3.5 h-3.5" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.258206 1.00652C0.351976 0.912791 0.479201 0.860131 0.611706 0.860131C0.744212 0.860131 0.871437 0.912791 0.965207 1.00652L3.61171 3.65302L6.25821 1.00652C6.35198 0.912791 6.47921 0.860131 6.61171 0.860131C6.74421 0.860131 6.87144 0.912791 6.96521 1.00652L7.54652 1.58783C7.64025 1.6816 7.69291 1.80882 7.69291 1.94133C7.69291 2.07383 7.64025 2.20106 7.54652 2.29483L4.89999 4.94133L7.54652 7.58783C7.64025 7.6816 7.69291 7.80882 7.69291 7.94133C7.69291 8.07383 7.64025 8.20106 7.54652 8.29483L6.96521 8.87614C6.87144 8.96987 6.74421 9.02253 6.61171 9.02253C6.47921 9.02253 6.35198 8.96987 6.25821 8.87614L3.61171 6.22964L0.965207 8.87614C0.871437 8.96987 0.744212 9.02253 0.611706 9.02253C0.479201 9.02253 0.351976 8.96987 0.258206 8.87614L-0.323107 8.29483C-0.416838 8.20106 -0.469498 8.07383 -0.469498 7.94133C-0.469498 7.80882 -0.416838 7.6816 -0.323107 7.58783L2.32342 4.94133L-0.323107 2.29483C-0.416838 2.20106 -0.469498 2.07383 -0.469498 1.94133C-0.469498 1.80882 -0.416838 1.6816 -0.323107 1.58783L0.258206 1.00652Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="ti-modal-body">
+          </div>
+        <div class="ti-modal-footer">
+          <button type="button" class="ti-btn ti-btn-secondary" data-hs-overlay="#modal-import-excel">Cerrar</button>
+          <button type="button" class="ti-btn ti-btn-primary">Continuar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div id="modal-eliminar-producto" class="hs-overlay hidden ti-modal">
+    <div class="hs-overlay-open:mt-7 ti-modal-box mt-0 ease-out max-w-sm w-full m-3 mx-auto">
+        <div class="ti-modal-content">
+            <div class="ti-modal-body text-center">
+                <div class="mb-4">
+                    <i class="ri-delete-bin-6-line text-7xl text-danger"></i>
+                </div>
+                <h4 class="mb-2">¿Estás seguro?</h4>
+                <p class="text-textmuted dark:text-textmuted/50">¿Realmente deseas eliminar este producto? Este proceso no se puede deshacer.</p>
+            </div>
+            <div class="ti-modal-footer">
+                <button type="button" class="ti-btn ti-btn-secondary" data-hs-overlay="#modal-eliminar-producto">Cancelar</button>
+                <button type="button" class="ti-btn ti-btn-danger">Eliminar</button>
+            </div>
+        </div>
+    </div>
+  </div>

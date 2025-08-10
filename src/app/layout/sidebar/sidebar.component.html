@@ -1,272 +1,119 @@
+<!-- Start::app-sidebar -->
 <aside class="app-sidebar" id="sidebar">
+
+  <!-- Start::main-sidebar-header -->
   <div class="main-sidebar-header">
-    <a routerLink="/dashboard" class="header-logo">
-      <img
-        src="images/brand-logos/desktop-logo.png"
-        alt="logo"
-        class="desktop-logo"
-      />
-      <img
-        src="images/brand-logos/toggle-dark.png"
-        alt="logo"
-        class="toggle-dark"
-      />
-      <img
-        src="images/brand-logos/desktop-dark.png"
-        alt="logo"
-        class="desktop-dark"
-      />
-      <img
-        src="images/brand-logos/toggle-logo.png"
-        alt="logo"
-        class="toggle-logo"
-      />
-      <img
-        src="images/brand-logos/toggle-white.png"
-        alt="logo"
-        class="toggle-white"
-      />
-      <img
-        src="images/brand-logos/desktop-white.png"
-        alt="logo"
-        class="desktop-white"
-      />
-    </a>
+      <a href="dashboard-comercio.php" class="header-logo">
+          <img src="../assets/images/brand-logos/desktop-logo.png" alt="logo" class="desktop-logo" /> <img src="../assets/images/brand-logos/toggle-dark.png" alt="logo" class="toggle-dark" />
+          <img src="../assets/images/brand-logos/desktop-dark.png" alt="logo" class="desktop-dark" /> <img src="../assets/images/brand-logos/toggle-logo.png" alt="logo" class="toggle-logo" />
+          <img src="../assets/images/brand-logos/toggle-white.png" alt="logo" class="toggle-white" /> <img src="../assets/images/brand-logos/desktop-white.png" alt="logo" class="desktop-white" />
+      </a>
   </div>
+  <!-- End::main-sidebar-header -->
+
+  
+
+
+  <!-- Start::main-sidebar -->
   <div class="main-sidebar" id="sidebar-scroll">
-    <nav class="main-menu-container nav nav-pills flex-col sub-open">
-      <div class="slide-left" id="slide-left">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#7b8191"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"
-          ></path>
-        </svg>
-      </div>
-      <ul class="main-menu">
-        <li class="slide__category">
-          <span class="category-name">PRINCIPAL</span>
-        </li>
 
-        <li class="slide">
-          <a routerLink="/dashboard" class="side-menu__item">
-            <i class="bi bi-house w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Dashboard</span>
-          </a>
-        </li>
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bi bi-cart2 w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Ventas</span>
-            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1">
-              <a href="javascript:void(0)">Ventas</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/ventas" class="side-menu__item">Todas</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/historial-ventas" class="side-menu__item"
-                >Historial</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="slide__category">
-          <span class="category-name">CORTES</span>
-        </li>
+      <!-- Start::nav -->
+      <nav class="main-menu-container nav nav-pills flex-col sub-open">
+          <div class="slide-left" id="slide-left">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z"></path> </svg>
+          </div>
+          <ul class="main-menu">
 
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bi bi-calendar4-range w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Comercios</span>
-            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1">
-              <a href="javascript:void(0)">Comercios</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/cortes-activos" class="side-menu__item"
-                >Activos</a
-              >
-            </li>
-            <li class="slide">
-              <a routerLink="/historial-comercios" class="side-menu__item"
-                >Historial</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bi bi-calendar4-range w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Delivery</span>
-            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1">
-              <a href="javascript:void(0)">Delivery</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/admin-delivery" class="side-menu__item"
-                >Precios</a
-              >
-            </li>
-            <li class="slide">
-              <a routerLink="/delivery-activos" class="side-menu__item"
-                >Activos</a
-              >
-            </li>
-            <li class="slide">
-              <a routerLink="/historial-delivery" class="side-menu__item"
-                >Historial</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="slide">
-          <a routerLink="/gestion-de-cortes" class="side-menu__item">
-            <i class="bi bi-calendar4-range w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Gestión de Cortes</span>
-          </a>
-        </li>
-        <li class="slide__category">
-          <span class="category-name">CLIENTES</span>
-        </li>
+              <li class="slide__category">
+                  <span class="category-name">PRINCIPAL</span>
+              </li>
 
-        <li class="slide">
-          <a routerLink="/comercios" class="side-menu__item">
-            <i class="bi bi-building-check w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Comercios</span>
-          </a>
-        </li>
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bi bi-cart2 w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Membresias</span>
-            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide">
-              <a routerLink="/gestion-de-membresias" class="side-menu__item"
-                >Listado</a
-              >
-            </li>
-            <li class="slide">
-              <a routerLink="/cupones" class="side-menu__item">Cupones</a>
-            </li>
-          </ul>
-        </li>
-        <li class="slide__category">
-          <span class="category-name">MARKETPLACE</span>
-        </li>
+              <!-- Start::option -->
+              <li class="slide">
+                  <a routerlink="/dashboard" class="side-menu__item">
+                      <i class="bi bi-house w-6 h-6 side-menu__icon"></i>
+                      <span class="side-menu__label">Dashboard</span>
+                  </a>
+              </li>
+              <!-- End::option -->
 
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bi bi-megaphone w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Marketing</span>
-            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1">
-              <a href="javascript:void(0)">Marketing</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/banners" class="side-menu__item">Banners</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/categorias" class="side-menu__item">Categorías</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/secciones" class="side-menu__item">Secciones</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/cintillo" class="side-menu__item">Cintillo</a>
-            </li>
-          </ul>
-        </li>
-        <li class="slide__category">
-          <span class="category-name">REPORTES</span>
-        </li>
+               <!-- Perfil -->
+              <li class="slide__category">
+                  <span class="category-name">PERFIL COMERCIO</span>
+              </li>
 
-        <li class="slide">
-          <a class="side-menu__item">
-            <i class="bi bi-clipboard2-data w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Reportes</span>
-          </a>
-        </li>
-        <li class="slide__category">
-          <span class="category-name">GENERALES</span>
-        </li>
+              <li class="slide has-sub">
+                  <a href="javascript:void(0);" class="side-menu__item">
+                      <i class="bi bi-person-check bounding-box w-6 h-6 side-menu__icon"></i>
+                      <span class="side-menu__label">Mi perfil</span>
+                      <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                  </a>
+                  <ul class="slide-menu child1">
+                      <li class="slide">
+                          <a href="perfil-comercio.php" class="side-menu__item">Mis datos</a>
+                      </li>
+                  </ul>
+              </li>
 
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bi bi-door-open w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Accesos</span>
-            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1">
-              <a href="javascript:void(0)">Accesos</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/usuarios" class="side-menu__item">Usuarios</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/roles" class="side-menu__item"
-                >Roles y Permisos</a
-              >
-            </li>
-            <li class="slide">
-              <a routerLink="/historial" class="side-menu__item">Historial</a>
-            </li>
+
+              <!-- End Perfil -->
+
+              <li class="slide__category">
+                  <span class="category-name">TIENDA</span>
+              </li>
+
+              <!-- Start::dropdown option -->
+              <li class="slide has-sub">
+                  <a href="javascript:void(0);" class="side-menu__item">
+                      <i class="bi bi-box w-6 h-6 side-menu__icon"></i>
+                      <span class="side-menu__label">Productos</span>
+                      <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                  </a>
+                  <ul class="slide-menu child1">
+                      <li class="slide side-menu__label1">
+                          <a href="javascript:void(0)">Productos</a>
+                      </li>
+                      <li class="slide">
+                          <a href="listado-de-productos.php" class="side-menu__item">Todos los Productos</a>
+                      </li>
+                  </ul>
+              </li>
+              <!-- End::dropdown option -->
+               
+             
+
+              <li class="slide__category">
+                  <span class="category-name">VENTAS</span>
+              </li>
+
+
+              <!-- End::option -->
+              <li class="slide has-sub">
+                  <a href="javascript:void(0);" class="side-menu__item">
+                      <i class="bi bi-cart2 w-6 h-6 side-menu__icon"></i>
+                      <span class="side-menu__label">Ordenes</span>
+                      <i class="ri-arrow-down-s-line side-menu__angle"></i>
+                  </a>
+                  <ul class="slide-menu child1">
+                     
+                      <li class="slide">
+                          <a href="ordenes-activas.php" class="side-menu__item">Ordenes Activas</a>
+                          <a href="ordenes-entregadas.php" class="side-menu__item">Ordenes Entregadas</a>
+                          <a href="historial-pagos-comercio2.php" class="side-menu__item">Historial de pagos</a>
+                      </li>
+                     
+                  </ul>
+              </li>
+              <!-- End::option -->
+
+              
           </ul>
-        </li>
-        <li class="slide has-sub">
-          <a href="javascript:void(0);" class="side-menu__item">
-            <i class="bi bi-file-earmark-text w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Términos Legales</span>
-            <i class="ri-arrow-down-s-line side-menu__angle"></i>
-          </a>
-          <ul class="slide-menu child1">
-            <li class="slide side-menu__label1">
-              <a href="javascript:void(0)">Términos Legales</a>
-            </li>
-            <li class="slide">
-              <a routerLink="/gestion-de-terminos" class="side-menu__item"
-                >Gestión de términos</a
-              >
-            </li>
-          </ul>
-        </li>
-        <li class="slide">
-          <a href="#" class="side-menu__item">
-            <i class="bi bi-gear w-6 h-6 side-menu__icon"></i>
-            <span class="side-menu__label">Configuraciones</span>
-          </a>
-        </li>
-      </ul>
-      <div class="slide-right" id="slide-right">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#7b8191"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-        >
-          <path
-            d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"
-          ></path>
-        </svg>
-      </div>
-    </nav>
+          <div class="slide-right" id="slide-right"><svg xmlns="http://www.w3.org/2000/svg" fill="#7b8191" width="24" height="24" viewBox="0 0 24 24"> <path d="M10.707 17.707 16.414 12l-5.707-5.707-1.414 1.414L13.586 12l-4.293 4.293z"></path> </svg></div>
+      </nav>
+      <!-- End::nav -->
+
   </div>
+  <!-- End::main-sidebar -->
+
 </aside>
+<!-- End::app-sidebar -->

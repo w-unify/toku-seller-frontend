@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<div class="page">
+    
+    <app-header></app-header>
+    <app-sidebar></app-sidebar>
+    <div class="main-content app-content">
+        <div class="container-fluid">
+            
+            <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
+                <div>
+                    <nav>
+                        <ol class="breadcrumb mb-1">
+                            <li class="breadcrumb-item"><a href="javascript:void(0);">Comercios</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Todos los comercios</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+            <div class="box p-5">
+                <div class="box-header justify-between">
+                    <div class="box-title">
+                        Reporte de comercios
+                    </div>
+                    <div class="flex gap-4 items-center flex-wrap">
+                        <div class="ti-btn-group ti-dropdown hs-dropdown p-0 border-0">
+                            <button class="ti-btn ti-btn-outline-light border !m-0 !border-defaultborder dark:!border-defaultborder/10 ti-dropdown-toggle hs-dropdown-toggle gap-0" type="button">
+                                <i class="ti ti-sort-descending-2 me-1"></i> Filtrar por
+                                <i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                            </button>
+                            <ul class="ti-dropdown-menu hs-dropdown-menu hidden">
+                                <li><a class="ti-dropdown-item" (click)="filtrar('fecha')">Fecha de registro</a></li>
+                                <li><a class="ti-dropdown-item" (click)="filtrar('vip')">Membresia VIP</a></li>
+                                <li><a class="ti-dropdown-item" (click)="filtrar('premium')">Membresia Premium</a></li>
+                                <li><a class="ti-dropdown-item" (click)="filtrar('standard')">Membresia Standard</a></li>
+                            </ul>
+                        </div>
+                        <div class="custom-form-group grow">
+                            <input type="text" class="form-control !pe-[7rem]" placeholder="Buscar..">
+                            <a class="text-textmuted dark:text-textmuted/50 custom-form-btn" (click)="buscar()"><i class="ti ti-search"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="box-body p-0 ">
+                    <div class="table-responsive">
+                        <table class="ti-custom-table ti-custom-table-hover text-nowrap">
+                            <thead>
+                                <tr class="border-b !border-defaultborde dark:!border-defaultborder/10">
+                                    <th scope="col">#Factura</th>
+                                    <th scope="col">Comercio</th>
+                                    <th scope="col">Fecha de pago</th>
+                                    <th scope="col">Monto pagado</th>
+                                    <th scope="col">Estado</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                    <td class="p-2">{{ comercio.factura }}</td>
+                                    <td>{{ comercio.nombreComercio }}</td>
+                                    <td>{{ comercio.fechaPago | date: 'dd/MM/yyyy' }}</td>
+                                    <td>L {{ comercio.montoPagado | number }}</td>
+                                    <td><span class="badge bg-success/10 text-success">{{ comercio.estado }}</span></td>
+                                    <td>
+                                        <a class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0"
+                                           (click)="verDetalles(comercio)">
+                                            <i class="ri-eye-line"></i>
+                                        </a>
+                                        <a class="ti-btn ti-btn-sm ti-btn-soft-info" title="Exportar" (click)="descargar(comercio)">
+                                            <i class="ri-download-line"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="box-footer">
+                    <div class="flex items-center flex-wrap overflow-auto">
+                        <div class="flex items-center gap-2">
+                            <label for="entries" class="text-sm">Mostrar</label>
+                            <select id="entries" name="entries" class="block w-20 px-2 py-1 text-sm border border-gray-300 rounded-md" >
+                                <option>20</option>
+                                <option>50</option>
+                                <option>100</option>
+                            </select>
+                            <span class="text-sm">registros</span>
+                        </div>
+                        <div class="ms-auto my-2">
+                            <nav>
+                                <ul class="ti-pagination mb-0 !p-0 justify-end float-end">
+                                    <li class="page-item">
+                                        <a class="page-link">Previo</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" >Antes</a>
+                                    </li>
+                                    <li class="page-item" >
+                                        <a class="page-link">Siguiente</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </div>
+    <app-footer></app-footer>
+    <div id="modal1" class="hs-overlay hidden ti-modal">
+        <div class="hs-overlay-open:mt-7 ti-modal-box mt-0 ease-out lg:!max-w-4xl lg:w-full m-3 lg:!mx-auto">
+            <div class="ti-modal-content">
+                <div class="ti-modal-body p-6">
+                    <div class="grid grid-cols-12 gap-x-6">
+                        <div class="comercioSeleccionado">
+                            <h3 class="ti-modal-title">Factura: <span class="text-primary">{{ comercioSeleccionado.factura }}</span></h3>
+                            </div>
+                    </div>
+                </div>
+                <div class="ti-modal-footer flex justify-end p-4 border-t border-defaultborder/10">
+                    <button type="button" class="ti-btn bg-danger text-white" data-hs-overlay="#modal1">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>

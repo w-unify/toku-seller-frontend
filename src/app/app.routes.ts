@@ -62,6 +62,25 @@ export const routes: Routes = [
           ),
         title: 'Ordenes Activas',
       },
+      {
+        path: 'orders-delivered',
+        loadComponent: () =>
+          import('./features/orders/orders-delivered/orders-delivered.component').then(
+            (m) => m.OrdersDeliveredComponent
+          ),
+        title: 'Ordenes Entregadas',
+      },
+      {
+        path: 'history',
+        loadComponent: () =>
+          import('./features/orders/history/history.component').then(
+            (m) => m.HistoryComponent
+          ),
+        title: 'Ordenes Entregadas',
+      },
+
+
+    
       
     ],
   },

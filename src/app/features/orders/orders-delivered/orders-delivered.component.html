@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<div class="page">
+     
+        <div class="main-content app-content">
+            <div class="container-fluid">
+
+                
+                <div class="flex items-center justify-between page-header-breadcrumb flex-wrap gap-2">
+                    <div>
+                        <nav>
+                            <ol class="breadcrumb mb-1">
+                                <li class="breadcrumb-item"><a>Ordenes</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Todas las ordenes</li>
+                            </ol>
+                        </nav>
+                        <h1 class="page-title font-medium text-lg mb-0">Ordenes</h1>
+                    </div>
+                    <div class="ti-btn-list">
+                        <button class="ti-btn bg-white dark:bg-bodybg border border-defaultborder dark:border-defaultborder/10 btn-wave !my-0">
+                            <i class="ri-filter-3-line align-middle me-1 leading-none"></i> Filtrar
+                        </button>
+                    </div>
+                </div>
+                
+
+                <div class="box">
+                    <div class="box-header justify-between">
+                        <div class="box-title">
+                            Todas las ordenes
+                        </div>
+                        <div class="flex gap-4 items-center flex-wrap">
+                            <div class="ti-btn-group ti-dropdown hs-dropdown p-0 border-0">
+                            <button class="ti-btn ti-btn-outline-light border !m-0 !border-defaultborder dark:!border-defaultborder/10 ti-dropdown-toggle hs-dropdown-toggle gap-0" type="button" >
+                                    <i class="ti ti-sort-descending-2 me-1"></i> Filtrar por
+                                    <i class="ri-arrow-down-s-line align-middle ms-1 inline-block"></i>
+                                </button>
+                                <ul class="ti-dropdown-menu hs-dropdown-menu hidden">
+                                    <li><a class="ti-dropdown-item" href="javascript:void(0)">Fecha Creada</a></li>
+                                    <li><a class="ti-dropdown-item" href="javascript:void(0)">Estado</a></li>
+                                    <li><a class="ti-dropdown-item" href="javascript:void(0)">Ordenes</a></li>
+                                    <li><a class="ti-dropdown-item" href="javascript:void(0)">Nombre del producto</a></li>
+                                    <li><a class="ti-dropdown-item" href="javascript:void(0)">Más recientes</a></li>
+                                    <li><a class="ti-dropdown-item" href="javascript:void(0)">Anteriores</a></li>
+                                </ul>
+                            </div>
+                            <div class="custom-form-group grow">
+                                <input type="text" class="form-control !pe-[7rem]" placeholder="Buscar Ordenes.." aria-label="Recipient's username" aria-describedby="button-addon2">
+                                <a href="javascript:void(0);" class="text-textmuted dark:text-textmuted/50 custom-form-btn"><i class="ti ti-search"></i></a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="box-body p-0">
+                        <div class="table-responsive">
+                            <table class="ti-custom-table ti-custom-table-hover text-nowrap">
+                                <thead>
+                                    <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <th scope="col">Número de orden</th>
+                                        <th scope="col">Producto</th>
+                                        <th scope="col">Cliente</th>
+                                        <th scope="col">Whatsapp</th>
+                                        <th scope="col">Fecha</th>
+                                        <th scope="col">Estado</th>
+                                        <th scope="col">Método de pago</th>
+                                        <th scope="col">Precio</th>
+                                        <th scope="col">Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1172553</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/28.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php">Zapatos para correr</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/4.jpg" alt="">
+                                                </span>Violeta
+                                            </div>
+                                        </td>
+                                        <td>504 111 - 57840</td>
+                                        <td>
+                                             11 Octubre 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago con tarjeta</td>
+                                        <td class="font-semibold">L 177.00</td> 
+                                        <td>
+                                                <a class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0" data-hs-overlay="#modal1">
+                                                <i class="ri-eye-line"></i></a>
+                                            <a href="javascript:void(0);" class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                                <i class="ri-download-line"></i>
+                                            </a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1172555</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/12.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php">Zapatos para niño</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/15.jpg" alt="">
+                                                </span>Danny Raj 
+                                            </div>
+                                        </td>
+                                        <td>504 687-9954</td>
+                                        <td>
+                                            23 Jan 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago con Tarjeta</td>
+                                        <td class="font-semibold">L 153.00</td>
+                                        <td>
+                                        <a href="javascript:void(0);" class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0"
+                                                data-hs-overlay="#modal1">
+                                                <i class="ri-eye-line"></i></a>
+                                            <a  class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                                <i class="ri-download-line"></i>
+                                            </a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1202513</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/29.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php">Cartera Gucci</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/8.jpg" alt="">
+                                                </span>Emilia Gomez
+                                            </div>
+                                        </td>
+                                        <td>504 987-1323</td>
+                                        <td>
+                                            19 Feb 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago en efectivo</td>
+                                        <td class="font-semibold">L203.00</td>
+                                        <td>
+                                                <a class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0" data-hs-overlay="#modal1">
+                                                <i class="ri-eye-line"></i></a>
+                                            <a href="javascript:void(0);" class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                                <i class="ri-download-line"></i>
+                                            </a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1202510</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/14.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php">Maceta de interiores</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/11.jpg" alt="">
+                                                </span>Red Stark
+                                            </div>
+                                        </td>
+                                        <td>504 447-4518</td>
+                                        <td>
+                                            06 Mar 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago con Tarjeta</td>
+                                        <td class="font-semibold">L 211.00</td> 
+                                        <td>
+                                                <a class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0" data-hs-overlay="#modal1">
+                                                <i class="ri-eye-line"></i></a>
+                                            <a href="javascript:void(0);" class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                                <i class="ri-download-line"></i>
+                                            </a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1222516</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/11.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php"> Lentes de sol Rayban</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/1.jpg" alt="">
+                                                </span>Juan Urrutia
+                                            </div>
+                                        </td>
+                                        <td>504 666-8080</td>
+                                        <td>
+                                            18 Mar 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago en efectivo</td>
+                                        <td class="font-semibold">L 265.00</td> 
+                                        <td>
+                                                 <a class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0" data-hs-overlay="#modal1">
+                                                <i class="ri-eye-line"></i></a>
+                                            <a href="javascript:void(0);" class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                                <i class="ri-download-line"></i>
+                                            </a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1202513</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/13.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php">Silla Minimalista</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/8.jpg" alt="">
+                                                </span>Pedro Cardenas
+                                            </div>
+                                        </td>
+                                        <td>504 144-1423</td>
+                                        <td>
+                                            19 Feb 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago en efectivo</td>
+                                        <td class="font-semibold">L 203.00</td>
+                                        <td>
+                                                <a  class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0" data-hs-overlay="#modal1">
+                                                <i class="ri-eye-line"></i></a>
+                                            <a href="javascript:void(0);" class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                                <i class="ri-download-line"></i>
+                                            </a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1202510</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/30.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php">Wireless Headphones</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/11.jpg" alt="">
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td>504 985-4715</td>
+                                        <td>
+                                            06 Mar 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago con Tarjeta</td>
+                                        <td class="font-semibold">L 211.00</td> 
+                                        <td>
+                                                <a class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0" data-hs-overlay="#modal1">
+                                                <i class="ri-eye-line"></i></a>
+                                            <a href="javascript:void(0);" class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                                <i class="ri-download-line"></i>
+                                            </a>
+                                            
+                                        </td>
+                                    </tr>
+                                    <tr class="order-list border-b !border-defaultborder dark:!border-defaultborder/10">
+                                        <td>#1222516</td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm avatar-square bg-gray-300"><img src="../assets/images/ecommerce/png/31.png" class="w-full h-full" alt="..."></span>
+                                                <div class="ms-2">
+                                                    <p class="font-semibold mb-0 flex items-center"><a href="order-details.php">Airpods</a></p>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="flex items-center">
+                                                <span class="avatar avatar-sm me-2 avatar-rounded">
+                                                    <img src="../assets/images/faces/1.jpg" alt="">
+                                                </span>Henry Milo
+                                            </div>
+                                        </td>
+                                        <td>504 887-1323</td>
+                                        <td>
+                                            18 Mar 2025
+                                        </td>
+                                        <td><span class="badge bg-success/10 text-success">Entregado</span></td>
+                                        <td>Pago en efectivo</td>
+                                        <td class="font-semibold">L 265.00</td> 
+                                        <td>
+                                        <a class="ti-btn ti-btn-sm ti-btn-soft-primary btn-wave waves-effect waves-light !mb-0" data-hs-overlay="#modal1"><i class="ri-eye-line"></i>
+                                        </a>
+                                        <a class="ti-btn ti-btn-sm ti-btn-soft-info btn-wave waves-effect waves-light !mb-0">
+                                        <i class="ri-download-line"></i>
+                                        </a>
+                                            
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                                <div class="flex items-center flex-wrap overflow-auto">
+                                    <div class="flex items-center gap-2">
+                                        <label for="entries" class="text-sm">Mostrar</label>
+                                        <select id="entries" name="entries" class="block w-20 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring ">
+                                            <option>20</option>
+                                            <option>40</option>
+                                            <option>50</option>
+                                        </select>
+                                        <span class="text-sm">registros</span>
+                                    </div>
+                                    <div class="ms-auto my-2">
+                                        <nav aria-label="" class="">
+                                            <ul class="ti-pagination mb-0 !p-0 justify-end float-end">
+                                                <li class="page-item disabled"> <a class="page-link px-3 py-[0.375rem] !text-[1rem] bg-white dark:bg-bodybg !border-e-0 !rounded-tr-none !rounded-br-none">Previo</a></li>
+                                                <li class="page-item"><a class="page-link px-3 py-[0.375rem] active !text-[1rem] bg-white dark:bg-bodybg !rounded-none !border-e-0" href="javascript:void(0);">1</a></li>
+                                                <li class="page-item " aria-current="page"> <a class="page-link px-3 py-[0.375rem] !text-[1rem] bg-white dark:bg-bodybg !rounded-none !border-e-0" href="javascript:void(0);">2</a> </li>
+                                                <li class="page-item"><a class="page-link px-3 py-[0.375rem] !text-[1rem] bg-white dark:bg-bodybg !rounded-none !border-e-0" href="javascript:void(0);">3</a></li>
+                                                <li class="page-item"><a class="page-link px-3 py-[0.375rem] !text-[1rem] bg-white dark:bg-bodybg !rounded-none !border-e-0" href="javascript:void(0);">4</a></li>
+                                                <li class="page-item"> <a class="page-link px-3 py-[0.375rem] !text-[1rem] bg-white dark:bg-bodybg !rounded-tl-none !rounded-bl-none" href="javascript:void(0);">Siguiente</a> </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                
+
+            </div>
+        </div>
+     
+
+        
+  
+
+
+
+
+    </div>
+
+    
+
+<div class="scrollToTop">
+    <span class="arrow"><i class="ti ti-arrow-narrow-up text-xl"></i></span>
+</div>
+<div id="responsive-overlay"></div>
+
+
+
+
+<div id="modal1" class="hs-overlay hidden ti-modal">
+    <div class="hs-overlay-open:mt-7 ti-modal-box mt-0 ease-out lg:!max-w-4xl lg:w-full m-3 lg:!mx-auto">
+        <div class="ti-modal-content">
+            <div class="ti-modal-header border-b border-defaultborder/10">
+                <div class="h5 mb-0 sm:flex block items-center">
+                    <div class="avatar avatar-sm">
+                        <img src="../assets/images/brand-logos/toggle-logo.png" alt="Logo de Toku">
+                    </div>
+                    <div class="sm:ms-2 ms-0 sm:mt-0 mt-2">
+                        <h6 class="font-medium mb-0">Factura: <span class="text-primary">#7864-1542</span></h6>
+                    </div>
+                </div>
+                <div class="ms-auto mt-md-0 mt-2">
+                    <button class="ti-btn ti-btn-sm bg-primarytint1color text-white me-1" onclick="javascript:window.print();">Imprimir<i class="ri-printer-line ms-1 align-middle inline-block"></i></button>
+                    <button class="ti-btn ti-btn-sm bg-primary text-white">Guardar como PDF<i class="ri-file-pdf-line ms-1 align-middle inline-block"></i></button>
+                </div>
+            </div>
+
+            <div class="ti-modal-body p-6">
+                <div class="box-body">
+                    <div class="grid grid-cols-12 sm:gap-x-6 gap-y-3">
+                        <div class="xl:col-span-12 col-span-12">
+                            <div class="grid grid-cols-12 gap-x-6">
+                                <div class="xl:col-span-4 lg:col-span-4 md:col-span-5 sm:col-span-12 col-span-12">
+                                    <p class="font-bold mb-1 text-lg">De: TOKU S. de R.L.</p>
+                                    <p class="mb-1 text-textmuted dark:text-textmuted/50">Honduras, Tegucigalpa</p>
+                                    <p class="mb-1 text-textmuted dark:text-textmuted/50">facturas&#64;toku.hn</p>
+                                    <p class="mb-1 text-textmuted dark:text-textmuted/50">(504) 7726-8978</p>
+                                </div>
+                                <div class="xl:col-span-4 lg:col-span-4 md:col-span-2 sm:col-span-12 col-span-12"></div>
+                                <div class="xl:col-span-4 lg:col-span-4 md:col-span-5 sm:col-span-12 col-span-12 pb-4">
+                                    <p class="font-bold mb-1 text-lg">Para: Alexander Rivas</p>
+                                    <p class="text-textmuted dark:text-textmuted/50 mb-1">Honduras, Tegucigalpa</p>
+                                    <p class="mb-1 text-textmuted dark:text-textmuted/50">Pago con tarjeta</p>
+                                    <p class="mb-1 text-textmuted dark:text-textmuted/50">Transacción aprobada: 0976864937345</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="xl:col-span-3 col-span-12">
+                            <p class="font-medium text-textmuted dark:text-textmuted/50 mb-1">Factura:</p>
+                            <p class="text-[15px] mb-1">#7864-1542</p>
+                        </div>
+                        <div class="xl:col-span-3 col-span-12">
+                            <p class="font-medium text-textmuted dark:text-textmuted/50 mb-1">Fecha de corte:</p>
+                            <p class="text-[15px] mb-1">15 de Octubre 2025</p>
+                        </div>
+                        <div class="xl:col-span-3 col-span-12">
+                            <p class="font-medium text-textmuted dark:text-textmuted/50 mb-1">Fecha de pago:</p>
+                            <p class="text-[15px] mb-1">18 de Octubre 2025</p>
+                        </div>
+                        <div class="xl:col-span-3 col-span-12">
+                            <p class="font-medium text-textmuted dark:text-textmuted/50 mb-1">Total a recibir:</p>
+                            <p class="text-[1.2rem] font-medium text-primary">L30,963.30</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body mt-6">
+                    <div class="table-responsive">
+                        <table class="ti-custom-table ti-custom-table-head mt-3 border border-defaultborder dark:border-defaultborder/10">
+                            <thead>
+                                <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                                    <th>Productos vendidos</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio</th>
+                                    <th>Comisión</th>
+                                    <th>Total menos comisión</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                                    <td><div class="font-medium">Zapatos Air Nike</div></td>
+                                    <td>20</td>
+                                    <td>L1305.94</td>
+                                    <td>L264</td>
+                                    <td>L25,854.80</td>
+                                </tr>
+                                <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                                    <td><div class="font-medium">Camiseta Gap blanca</div></td>
+                                    <td>5</td>
+                                    <td>L350.00</td>
+                                    <td>L52.50</td>
+                                    <td>L1,487.50</td>
+                                </tr>
+                                <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                                    <td><div class="font-medium">Audifonos G435</div></td>
+                                    <td>2</td>
+                                    <td>L780.00</td>
+                                    <td>L117.00</td>
+                                    <td>L1,326.00</td>
+                                </tr>
+                                <tr class="border-b !border-defaultborder dark:!border-defaultborder/10">
+                                    <td><div class="font-medium">Case XR5678</div></td>
+                                    <td>12</td>
+                                    <td>L225.00</td>
+                                    <td>L33.75</td>
+                                    <td>L2,295.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="delivery-details mt-6 p-4 border border-gray-200 rounded-lg shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3">Detalles de la Entrega</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
+                        <div>
+                            <p class="font-medium mb-1">Estado de la Orden:</p>
+                            <p class="text-xl font-bold text-green-600">Entregado</p>
+                        </div>
+                        <div>
+                            <p class="font-medium mb-1">Repartidor:</p>
+                            <p class="text-lg font-semibold">Juan Pérez</p>
+                        </div>
+                        <div>
+                            <p class="font-medium mb-1">Fecha y Hora de Entrega:</p>
+                            <p class="text-sm text-gray-600">Septiembre 16, 11:45am</p>
+                        </div>
+                        <div>
+                            <p class="font-medium mb-1">Prueba de Entrega:</p>
+                            <a href="#delivery-photo-modal" class="text-primary flex items-center" data-hs-overlay="#delivery-photo-modal">
+                                <i class="ri-camera-line me-1"></i>
+                                Ver foto de entrega
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="delivery-photo-modal" class="hs-overlay hidden ti-modal">
+                    <div class="hs-overlay-open:mt-7 ti-modal-box mt-0 ease-out lg:!max-w-xl lg:w-full m-3 lg:!mx-auto">
+                        <div class="ti-modal-content">
+                            <div class="ti-modal-header">
+                                <h3 class="ti-modal-title">Foto de Entrega</h3>
+                                <button type="button" class="ti-btn ti-btn-danger" data-hs-overlay="#delivery-photo-modal">
+                                    Cerrar<i class="ri-close-line ms-2"></i>
+                                </button>
+                            </div>
+                            <div class="ti-modal-body p-4 text-center">
+                                <img src="ruta/a/la/foto_de_entrega.jpg" alt="Foto de entrega del paquete" class="max-w-full h-auto rounded-lg shadow-md">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="ti-modal-footer flex justify-end p-4 border-t border-defaultborder/10">
+                <button type="button" class="ti-btn bg-danger text-white" data-hs-overlay="#modal1">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+

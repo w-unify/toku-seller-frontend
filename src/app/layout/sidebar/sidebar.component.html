@@ -43,14 +43,14 @@
               </li>
 
               <li class="slide has-sub">
-                  <a href="javascript:void(0);" class="side-menu__item">
+                  <a class="side-menu__item">
                       <i class="bi bi-person-check bounding-box w-6 h-6 side-menu__icon"></i>
                       <span class="side-menu__label">Mi perfil</span>
                       <i class="ri-arrow-down-s-line side-menu__angle"></i>
                   </a>
                   <ul class="slide-menu child1">
                       <li class="slide">
-                          <a href="perfil-comercio.php" class="side-menu__item">Mis datos</a>
+                          <a routerlink="/profile" class="side-menu__item">Mis datos</a>
                       </li>
                   </ul>
               </li>
@@ -71,10 +71,10 @@
                   </a>
                   <ul class="slide-menu child1">
                       <li class="slide side-menu__label1">
-                          <a href="javascript:void(0)">Productos</a>
+                          <a>Productos</a>
                       </li>
                       <li class="slide">
-                          <a href="listado-de-productos.php" class="side-menu__item">Todos los Productos</a>
+                          <a routerlink="/products" class="side-menu__item">Todos los Productos</a>
                       </li>
                   </ul>
               </li>
@@ -97,9 +97,9 @@
                   <ul class="slide-menu child1">
                      
                       <li class="slide">
-                          <a href="ordenes-activas.php" class="side-menu__item">Ordenes Activas</a>
-                          <a href="ordenes-entregadas.php" class="side-menu__item">Ordenes Entregadas</a>
-                          <a href="historial-pagos-comercio2.php" class="side-menu__item">Historial de pagos</a>
+                          <a routerlink="/orders" class="side-menu__item">Ordenes Activas</a>
+                          <a routerlink="/orders-delivered" class="side-menu__item">Ordenes Entregadas</a>
+                          <a routerlink="/history" class="side-menu__item">Historial de pagos</a>
                       </li>
                      
                   </ul>

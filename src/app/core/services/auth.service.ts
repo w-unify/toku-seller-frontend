@@ -5,7 +5,7 @@ import { catchError, tap } from 'rxjs/operators';
 import { Router } from '@angular/router';
 
 interface LoginPayload {
-  username: string;
+  email: string;
   password: string;
 }
 
@@ -39,7 +39,7 @@ interface BackendErrorResponse {
   providedIn: 'root'
 })
 export class AuthService {
-  private readonly API_BASE_URL = 'http://localhost:3000/toku-admin/v1/auth';
+  private readonly API_BASE_URL = 'http://localhost:3000/toku-seller/v1/auth';
   private isAuthenticatedUser = false;
   private readonly USER_KEY = 'current_user';
 

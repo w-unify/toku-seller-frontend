@@ -17,10 +17,10 @@ export const routes: Routes = [
     title: 'Login Toku',
   },
   {
-    path: 'registration',
+    path: 'register',
     loadComponent: () =>
-      import('./features/auth/registration/registration.component').then(
-        (m) => m.RegistrationComponent
+      import('./features/auth/register/register.component').then(
+        (m) => m.RegisterComponent
       ),
     title: 'Register Toku',
   },

@@ -1,0 +1,128 @@
+<app-header-auth></app-header-auth>
+<main class="main-content bg-gray-50 bg-opacity-90">
+  <div class="container py-48">
+    <div class="login-container max-w-[500px] mx-auto bg-white rounded-12 p-32">
+      <div class="text-center mb-32">
+        <img src="images/logo.png" alt="Toku Logo" class="h-[60px] mx-auto" />
+      </div>
+      <h2 class="login-title text-24 font-semibold mb-24 text-center">
+        Crear cuenta
+      </h2>
+
+      <!-- MENSAJES -->
+      <p *ngIf="errorMessage" class="text-red-600 text-sm mb-4">{{ errorMessage }}</p>
+      <p *ngIf="successMessage" class="text-green-600 text-sm mb-4">{{ successMessage }}</p>
+
+      <form class="space-y-12" (ngSubmit)="onSubmit()" #registerForm="ngForm">
+        <div class="grid grid-cols-2 gap-12">
+          <div>
+            <label for="first-name" class="form-label block mb-2 text-gray-700 text-sm">Nombre</label>
+            <input
+              id="first-name"
+              name="name"
+              [(ngModel)]="formData.name"
+              class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8 focus:border-main-500 focus:ring-1 focus:ring-main-500 transition-colors"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+          <div>
+            <label for="last-name" class="form-label block mb-2 text-gray-700 text-sm">Apellido</label>
+            <input
+              id="last-name"
+              name="lastname"
+              [(ngModel)]="formData.lastname"
+              class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8 focus:border-main-500 focus:ring-1 focus:ring-main-500 transition-colors"
+              placeholder="Tu apellido"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <label for="email" class="form-label block mb-2 text-gray-700 text-sm">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            [(ngModel)]="formData.email"
+            class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8 focus:border-main-500 focus:ring-1 focus:ring-main-500 transition-colors"
+            placeholder="tu@correo.com"
+            required
+          />
+        </div>
+
+        <div class="mt-8">
+          <label for="phone" class="form-label block mb-2 text-gray-700 text-sm">Teléfono</label>
+          <input
+            id="phone"
+            type="tel"
+            name="phone"
+            [(ngModel)]="formData.phone"
+            class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8"
+            placeholder="Tu número de teléfono"
+            required
+          />
+        </div>
+
+        <div class="mt-8">
+          <label for="password" class="form-label block mb-2 text-gray-700 text-sm">Contraseña</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            [(ngModel)]="formData.password"
+            class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8"
+            placeholder="Mínimo 8 caracteres"
+            required
+          />
+        </div>
+
+        <div class="mt-8">
+          <label for="confirm-password" class="form-label block mb-2 text-gray-700 text-sm">Confirmar contraseña</label>
+          <input
+            type="password"
+            id="confirm-password"
+            name="confirmPassword"
+            [(ngModel)]="formData.confirmPassword"
+            class="w-full px-12 py-8 text-sm border border-gray-300 rounded-8"
+            placeholder="Vuelve a escribir tu contraseña"
+            required
+          />
+        </div>
+
+        <div class="flex items-start">
+          <input
+            type="checkbox"
+            id="terms"
+            name="termsAccepted"
+            [(ngModel)]="formData.termsAccepted"
+            class="form-checkbox mt-4"
+            required
+          />
+          <label for="terms" class="ms-8 text-sm">
+            Acepto los
+            <a href="#" class="text-main-600 hover-text-decoration-underline">Términos y Condiciones</a>
+            y
+            <a href="#" class="text-main-600 hover-text-decoration-underline">Política de Privacidad</a>
+          </label>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary w-full py-8 text-sm bg-main-600 text-white rounded-8 hover:bg-main-700 transition-colors duration-200 mt-12"
+        >
+          Crear cuenta
+        </button>
+      </form>
+
+      <div class="text-center mt-24">
+        <p class="text-gray-500">
+          ¿Ya tienes una cuenta?
+          <a routerLink="/login" class="text-main-600 hover-text-decoration-underline">Iniciar sesión</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</main>
+<app-footer-auth></app-footer-auth>

@@ -14,7 +14,7 @@ import { AuthService } from '../../../core/services/auth.service';
   changeDetection: ChangeDetectionStrategy.OnPush 
 })
 export class LoginComponent {
-  username = '';
+  email = '';
   password = '';
   errorMessage: string | null = null; 
   passwordVisible: boolean = false;
@@ -27,13 +27,13 @@ export class LoginComponent {
   onLogin(): void {
     this.errorMessage = null; 
 
-    if (!this.username.trim() || !this.password.trim()) {
-      this.errorMessage = 'Por favor, introduce tu usuario y contraseña.';
+    if (!this.email.trim() || !this.password.trim()) {
+      this.errorMessage = 'Por favor, introduce tu email y contraseña.';
       this.cdr.detectChanges(); 
       return;
     }
 
-    this.authService.login({ username: this.username, password: this.password }).subscribe({
+    this.authService.login({ email: this.email, password: this.password }).subscribe({
       next: () => {
         console.log('LoginComponent: Login exitoso. Navegando a /dashboard.');
         this.router.navigate(['/dashboard']);

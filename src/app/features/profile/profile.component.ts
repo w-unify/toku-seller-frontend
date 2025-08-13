@@ -11,11 +11,7 @@ export class ProfileComponent implements OnInit {
    constructor(private renderer: Renderer2) { }
 ngOnInit(): void {
     this.loadScriptsSequentially([
-      '/libs/apexcharts/apexcharts.min.js',
-      '/libs/@popperjs/core/umd/popper.min.js',
-      '/js/defaultmenu.min.js',
-      '/js/form-wizard.js',
-      '/js/form-wizard-init.js',
+      '/libs/preline/preline.js'
 
     ]);
   }
